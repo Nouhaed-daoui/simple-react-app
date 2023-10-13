@@ -7,12 +7,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
+        //stage('Checkout') {
+        //    steps {
                 // Check out your source code from your version control system (e.g., Git)
-                checkout scm
-            }
-        }
+        //        checkout scm
+         //   }
+        //}
 
         stage('Build and Test') {
             steps {
