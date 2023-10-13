@@ -14,11 +14,14 @@ pipeline {
          //  }
        // }
 
-        stage('Build and Test') {
+      stage('Build and Test') {
             steps {
-                // Install Node.js and project dependencies
-               
-               
+                // Configure Node.js
+                tool name: 'NodeJS' // Use the name you configured in Jenkins
+                
+                // Install project dependencies
+                sh 'npm install'
+
                 // Build your React application
                 sh 'npm run build'
 
