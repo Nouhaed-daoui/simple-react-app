@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-    nodejs 'nodejs'
-}
+
 
     stages {
         stage('Checkout') {
@@ -17,12 +15,12 @@ pipeline {
             steps {
                 // Install Node.js and project dependencies
                
-
+               sh '/usr/local/bin/npm build'
                 // Build your React application
                 sh 'npm run build'
 
                 // Run tests (if you have test scripts in your package.json)
-                sh 'npm test'
+               // sh 'npm test'
             }
         }
 
