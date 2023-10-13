@@ -12,7 +12,7 @@ pipeline {
         stage('Build and Test') {
             steps {
                 // Install Node.js and project dependencies
-                sh 'npm install'
+               
 
                 // Build your React application
                 sh 'npm run build'
