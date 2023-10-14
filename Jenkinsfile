@@ -21,6 +21,8 @@ pipeline {
                 
                 // Install project dependencies
                 //sh 'npm install'
+                sh 'npm install --save-dev cross-env'
+
 
                 // Build your React application
                 sh 'npm run build'
