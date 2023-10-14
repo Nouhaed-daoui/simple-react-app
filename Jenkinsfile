@@ -20,7 +20,7 @@ pipeline {
                 tool name: 'NodeJS' // Use the name you configured in Jenkins
                 
                 // Install project dependencies
-                sh 'npm install'
+                //sh 'npm install'
 
                 // Build your React application
                 sh 'npm run build'
